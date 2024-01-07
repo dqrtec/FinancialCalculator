@@ -8,7 +8,7 @@ namespace MainScreen
         {
             InitializeComponent();
 
-            comboBox1 = new ComboBox();
+            comboBox1.DataSource = new List<TypeShopping>() { TypeShopping.Me, TypeShopping.House, TypeShopping.Other };
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,7 +25,13 @@ namespace MainScreen
         {
             string name = textBox1.Text.ToUpper();
             DateTime date = dateTimePicker1.Value;
-            var  = comboBox1.
+            var typePerson = comboBox1.SelectedValue;
+            double valor = Double.Parse(domainUpDown2.Text);
+            int parcelas = Int16.Parse(domainUpDown1.Text);
+
+            //Save
+
+            //Add on excel
         }
     }
 }
